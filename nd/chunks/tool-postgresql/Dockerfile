@@ -1,4 +1,5 @@
-FROM gitpod/workspace-full:latest
+ARG base
+FROM ${base}
 
 # Install PostgreSQL
 RUN sudo install-packages postgresql-12 postgresql-contrib-12

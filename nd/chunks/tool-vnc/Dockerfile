@@ -1,4 +1,5 @@
-FROM gitpod/workspace-full:latest
+ARG base
+FROM ${base}
 
 # Install Xvfb, JavaFX-helpers and Openbox window manager
 RUN sudo install-packages xvfb x11vnc xterm openjfx libopenjfx-java openbox

@@ -16,8 +16,8 @@
   assert:
   - status == 0
   - stdout.indexOf("Python 3") != -1
-- desc: it should default to the correct pip version
-  command: [sh, -c, '[ "$(pip --version)" = "$(pip3 --version)" ] && echo pass']
-  assert:
-  - status == 0
-  - stdout.trim() == "pass"
+# - desc: it should default to the correct pip version
+#   command: [sh, -c, '[ "$(pip --version)" = "$(pip3 --version)" ] && echo pass']
+#   assert:
+#   - status == 0
+#   - stdout.trim() == "pass"
