@@ -1,6 +1,8 @@
 - desc: it should run java
   command: [java -version]
   entrypoint: [bash, -i, -c]
+  env:
+    - DISPLAY=
   assert:
   - status == 0
   - stderr.indexOf("OpenJDK") != -1
